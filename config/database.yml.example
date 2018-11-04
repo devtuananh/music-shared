@@ -1,0 +1,20 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: framgia
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: music-app
+
+test:
+  <<: *default
+  database: music_test
+
+production:
+  <<: *default
+  database: music-app_production
+  username: music-app

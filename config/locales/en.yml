@@ -1,0 +1,9 @@
+en:
+  hello: "Hello world"
+  layouts:
+    header:
+    application:
+      base_title: "IMusic"
+  users:
+    new:
+      create: "Sign up"
