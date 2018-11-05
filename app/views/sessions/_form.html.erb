@@ -11,22 +11,23 @@
     <div class="col-xs-12 col-sm-6 col-md-6">
       <div class="form-group">
         <%= f.label :remember_me, class:"checkbox inline" do %>
-        <%= f.check_box :remember_me %><span><%= t ".remember" %></span>
-         <% end %>
+          <%= f.check_box :remember_me %>&nbsp;&nbsp;&nbsp;
+          <span><%= t ".remember" %></span>
+        <% end %>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6">
-      <div class="form-group text-right checkbox inline">
+      <div class="form-group text-right">
         <%= link_to t(".forgot_password"), root_path %>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-xs-12 col-md-6 text-left">
-      <%= f.submit "Log in", class:"btn btn-primary btn-block" %>
+      <%= f.submit t(".login"), class:"btn btn-primary btn-block" %>
     </div>
-    <div class="col-xs-12 col-md-6 text-right">
-    <p><%= t ".new_user" %> <%= link_to t(".signup"), signup_path, remote: true, data: {toggle: "modal", target: "#signUpModal"} %></p>
+    <div class="col-xs-12 col-md-6 text-right bottom-right">
+    <p><%= t ".not_have_account" %> <%= link_to t(".signup"), signup_path, remote: true, data: {toggle: "modal", target: "#signUpModal"} %></p>
     </div>
   </div>
 <% end %>

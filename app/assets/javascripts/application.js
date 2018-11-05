@@ -16,4 +16,11 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jquery3
+//= require adminlte.min
+//= require owl.carousel.min
+//= require master
+//= require react
+//= require react_ujs
+//= require components
 //= require_tree .

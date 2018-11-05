@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
     if user
       log_in user
       params[:session][:remember_me] == Settings.remember_me_checked ? remember(user) : forget(user)
-      redirect_to user
+      redirect_to root_path
     else
       flash.now[:danger] = t ".invalid"
       redirect_to root_path
